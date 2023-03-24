@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Timetable</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1> My Timetable</h1>
+    <div id="table-container"></div>
+    <form id="add-row-form">
+        <label for="row-header-input">Add Row:</label>
+        <input type="text" id="row-header-input" placeholder="Enter Header for the Row">
+        <button type="submit">Add</button>
+    </form>
+    <form id="add-col-form">
+        <label for="col-header-input">Add Column:</label>
+        <input type="text" id="col-header-input" placeholder="Enter Time Slot for the Column">
+        <button type="submit">Add</button>
+    </form>
+    <form id="add-agenda-form">
+        <label for="row-select">Select Row:</label>
+        <select id="row-select"></select>
+        <label for="col-select">Select Column:</label>
+        <select id="col-select"></select>
+        <label for="agenda-input">Agenda:</label>
+        <input type="text" id="agenda-input" placeholder="Enter Agenda for the Cell">
+        <button type="submit">Add</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="timetable.js"></script>
+</body>
+</html>
